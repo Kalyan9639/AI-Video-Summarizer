@@ -35,7 +35,7 @@ def process_audio_chunks(audio_path, target_sr=16000, chunk_length=480000):
     return chunks, target_sr
 
 def main():
-    
+    token = "YOUR_HUGGINGFACE_ACESS_TOKEN"
     processor = AutoProcessor.from_pretrained("openai/whisper-base", use_auth_token=token)
     model = AutoModelForSpeechSeq2Seq.from_pretrained("openai/whisper-base", use_auth_token=token)
 
