@@ -3,7 +3,7 @@ from google.genai import Client,types
 with open("C:/Users/madda/Desktop/coding/Hackattack - 25/transcription.txt", "r") as f:
     transcript = f.read()
 
-client = Client(api_key="AIzaSyCQIYPtpOxSorTaLhsVvQuG1_ZHD-nZct4")
+client = Client(api_key="YOUR_GEMINI_API_KEY")
 
 chat = client.chats.create(
     model="gemini-2.0-flash",
